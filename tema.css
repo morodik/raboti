@@ -1,0 +1,83 @@
+.switch-btn {
+    display: inline-block;
+    width: 72px; /* ширина */
+    height: 38px; /* высота */
+    border-radius: 19px; /* радиус скругления */
+    background: #bfbfbf; /* цвет фона */
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition-duration: 300ms; /* анимация */
+  }
+  .switch-btn::after {
+    content: "";
+    height: 32px; /* высота кнопки */
+    width: 32px; /* ширина кнопки */
+    border-radius: 17px;
+    background: #fff; /* цвет кнопки */
+    top: 3px; /* положение кнопки по вертикали относительно основы */
+    left: 3px; /* положение кнопки по горизонтали относительно основы */
+    transition-duration: 300ms; /* анимация */
+    position: absolute;
+    z-index: 1;
+  }
+  .switch-on {
+    background: #383838;
+  }
+  .switch-on::after {
+    left: 37px;
+  }
+.zagolovok {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    margin-bottom: 0%;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif
+}
+.info {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: none;
+    font-size: 18px;
+    padding-top: 1px;
+}
+p {
+    color: rgb(0, 0, 0);
+    background-color: rgb(45, 44, 44);
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: none;
+    font-size: 18px;
+}
+.dropbtn {
+    color: aliceblue;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 25px;
+    margin: 0 15px 15px 0;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    height: 46px;
+    line-height: 46px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #444;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+    cursor: pointer;
+    user-select: none;
+    appearance: none;
+    touch-action: manipulation;  
+    vertical-align: top;
+    transition: box-shadow 0.2s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: rgb(255, 255, 255);
+}
